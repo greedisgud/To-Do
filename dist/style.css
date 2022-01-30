@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-color: rgb(23, 147, 255);
+    background-color: rgb(107, 223, 249);
     color: white;
     
 }
@@ -15,5 +15,129 @@ body{
 .list-container{
     display: flex;
     justify-content: center;
+    gap: 80px;
+
+}
+
+.project-lists{
+    margin: 20px;
     
 }
+
+ul{
+    margin-left: -22px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+li{
+    margin-top: 14px;
+    list-style: circle;
+}
+
+.active-list{
+    font-weight: 700;
+}
+
+.btn-projects{
+    color: white;
+    background-color: rgb(107, 223, 249);
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.new-project{
+    background-color: rgb(107, 223, 249);
+    border-bottom: 2px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: inherit;
+    font-size: inherit;
+    outline: none;
+}
+
+.new-project:focus{
+    border-bottom: 4px solid white;
+    
+}
+
+.todo-list{
+    background-color: rgb(232, 228, 228);
+    margin: 20px;
+    margin-top: 40px;
+    width: 400px;
+    height: 350px;
+    border-radius: 0.5em;
+
+}
+
+.todo-header{
+    align-items: center;
+    background-color: rgb(201, 196, 196);
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 16px 20px;
+    color: black;
+    border-radius: 0.5em;
+    
+}
+
+p {
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.task{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    margin-left: 20px;
+    color: black;
+    font-weight: lighter;
+}
+
+.new-task{
+    background-color: rgb(232, 228, 228);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: inherit;
+    font-size: inherit;
+    outline: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.new-task:focus{
+    border-bottom: 4px solid black;
+
+}
+
+.btn-task{
+    background-color: rgb(232, 228, 228);
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-delete{
+    background-color: inherit;
+    border: none;
+    margin-left: 14px;
+    margin-top: 40px;
+    
+    
+}
+
+.btn-delete:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
