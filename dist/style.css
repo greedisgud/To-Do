@@ -140,4 +140,8 @@ p {
     text-decoration: underline;
 }
 
+.active-project{
+    font-weight: bold;
+}
+
 

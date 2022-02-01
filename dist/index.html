@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href="style.css">
-    <script src = "main.js"></script>
+    <script src = "main.js" defer></script>
     <title>To-Do List</title>
 </head>
 <body>
@@ -14,15 +14,15 @@
     <div class = "list-container">
         <div class = "project-lists">
             <h2 class = "project-list-title">Projects</h2>
-            <ul class = "project-list">
-                <li class = "active-list">Laundry</li>
-                <li>Homework</li>
+            <ul class = "project-list" data-projects>
+
 
             </ul>
 
-            <form action="">
+            <form action="" data-new-project-form>
                 <input type="text"
                     class = "new-project"
+                    data-new-project-input
                     placeholder="new-project-name"
                     aria-label = "new project name" 
                 />
@@ -31,14 +31,14 @@
             </form>
         </div>
 
-        <div class = "todo-list">
+        <div class = "todo-list" data-list-display-container>
             <div class = "todo-header">
-                <h2 class = "list-title">Laundry</h2>
-                <p>x tasks remaining</p>
+                <h2 class = "list-title" data-list-title>Laundry</h2>
+                <p class = "task-count" data-list-count>x tasks remaining</p>
             </div>
 
             <div class="todo-body">
-                <div class="tasks">
+                <div class="tasks" data-tasks>
                     <div class="task">
                         <input type="checkbox"
                             id = "task1" 
@@ -67,7 +67,7 @@
                 </div>
                 <div class="remove-tasks">
                     <button class = "btn-delete">clear completed tasks</button>
-                    <button class = "btn-delete">delete list</button>
+                    <button class = "btn-delete" data-delete-project>delete project</button>
                 </div>
             </div>
         </div>
